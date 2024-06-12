@@ -2,11 +2,16 @@ import { HStack, Heading, Image } from "@chakra-ui/react";
 import TORSTEN from "../assets/Logo/TORSTEN.webp";
 import ColorMode from "./ColorMode";
 import SearchInput from "./SearchInput";
-const NavBar = () => {
+
+interface Props {
+  onSearch: (searchText: string) => void;
+}
+
+const NavBar = ({ onSearch }: Props) => {
   return (
     <HStack justifyContent={"space-between"} padding={"10px"}>
       <Image borderRadius={40} src={TORSTEN} boxSize="80px"></Image>
-      <SearchInput />
+      <SearchInput onSearch={onSearch} />
       <Heading
         as="h1"
         size="m"
