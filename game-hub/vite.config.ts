@@ -9,5 +9,6 @@ export default defineConfig({
   },
   define: {
     __DEFINES__: {}, // Replace with your actual definitions or default values
+    __BASE__: '"/"', // or set to your base path if different
   },
 })
