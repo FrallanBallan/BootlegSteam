@@ -10,15 +10,14 @@ interface Props {
 const NavBar = ({ onSearch }: Props) => {
   return (
     <HStack justifyContent={"space-between"} padding={"10px"}>
-      <Image borderRadius={40} src={TORSTEN} boxSize="80px"></Image>
+      <Image
+        objectFit="cover"
+        borderRadius={40}
+        src={TORSTEN}
+        boxSize="80px"
+      ></Image>
       <SearchInput onSearch={onSearch} />
-      <Heading
-        as="h1"
-        size="m"
-        textDecoration="underline"
-        color={"teal.500"}
-        ml={5}
-      >
+      <Heading size="m" textDecoration="underline" color={"green.500"} ml={5}>
         TORSKEN BLINKS BOOTLEG STEAM
       </Heading>
       <ColorMode />
