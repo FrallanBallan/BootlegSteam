@@ -1,9 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import commonjs from '@rollup/plugin-commonjs'
+import nodeResolve from '@rollup/plugin-node-resolve'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    commonjs(),
+    nodeResolve(),
+  ],
   build: {
     outDir: 'dist', // Specify the output directory for build
   },
@@ -16,8 +22,8 @@ export default defineConfig({
     __HMR_PORT__: '""', // Hot Module Replacement port
     __HMR_BASE__: '""', // Hot Module Replacement base
     __MODE__: '""', // Mode (development or production)
-    __DEV__: '""', // Development mode flag
-    __PROD__: '""', // Production mode flag
+    __DEV__: 'false', // Development mode flag
+    __PROD__: 'true', // Production mode flag
     __VITE_ENV__: '""', // Vite environment
   },
 })
