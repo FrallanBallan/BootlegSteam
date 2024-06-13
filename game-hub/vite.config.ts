@@ -7,4 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist', // Specify the output directory for build
   },
+  define: {
+    __DEFINES__: {}, // Replace with your actual definitions or default values
+  },
 })
