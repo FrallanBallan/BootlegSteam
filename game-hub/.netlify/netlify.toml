@@ -1,0 +1,33 @@
+functionsDirectory = "C:\\Users\\frans\\Desktop\\Egna Projekt\\BootlegSteam\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\frans\\Desktop\\Egna Projekt\\BootlegSteam\\game-hub\\dist"
+publishOrigin = "config"
+command = "CI=npm run build"
+commandOrigin = "config"
+from = "/*"
+to = "/index.html"
+status = 200.0
+functions = "C:\\Users\\frans\\Desktop\\Egna Projekt\\BootlegSteam\\game-hub\\netlify\\functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
