@@ -14,5 +14,10 @@ export default defineConfig({
     __HMR_PROTOCOL__: '""', // Hot Module Replacement protocol
     __HMR_HOSTNAME__: '""', // Hot Module Replacement hostname
     __HMR_PORT__: '""', // Hot Module Replacement port
+    __HMR_BASE__: '""', // Hot Module Replacement base
+    __MODE__: '""', // Mode (development or production)
+    __DEV__: '""', // Development mode flag
+    __PROD__: '""', // Production mode flag
+    __VITE_ENV__: '""', // Vite environment
   },
 })
