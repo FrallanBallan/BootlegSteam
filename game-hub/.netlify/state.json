@@ -1,3 +1,20 @@
 {
-	"siteId": "41071226-90c9-40b0-8679-471490cca5f1"
+	"geolocation": {
+		"data": {
+			"city": "Johanneshov",
+			"country": {
+				"code": "SE",
+				"name": "Sweden"
+			},
+			"subdivision": {
+				"code": "AB",
+				"name": "Stockholm County"
+			},
+			"timezone": "Europe/Stockholm",
+			"latitude": 59.3333,
+			"longitude": 18.05
+		},
+		"timestamp": 1718348952463
+	},
+	"siteId": "3ad204f9-faf7-47fc-ad7d-7d2be7792cde"
 }
